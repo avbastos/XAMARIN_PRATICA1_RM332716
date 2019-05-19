@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.ControlesBasicos.ConfigPage">
+    <ContentPage.Content>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Privacidade">
+                    <SwitchCell Text="Aceita receber e-mail?" On="{Binding SendEmail}" x:Name="swtSendEmail" OnChanged="SwitchCell_OnChanged" />
+                    <EntryCell Text="{Binding Email}" Placeholder="Digite um e-mail" x:Name="txtEmail"></EntryCell>
+                </TableSection>
+                <TableSection x:Name="secMail">
+
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
